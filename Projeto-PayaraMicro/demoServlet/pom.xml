@@ -8,13 +8,8 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>demoServlet Maven Webapp</name>
 	<url>http://maven.apache.org</url>
+	
 	<dependencies>
-		<dependency>
-			<groupId>fish.payara.extras</groupId>
-			<artifactId>payara-micro</artifactId>
-			<version>5.181</version>
-		</dependency>
-
 		<dependency>
 			<groupId>javax</groupId>
 			<artifactId>javaee-web-api</artifactId>
