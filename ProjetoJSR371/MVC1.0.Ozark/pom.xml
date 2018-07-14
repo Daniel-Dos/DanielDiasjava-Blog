@@ -56,4 +56,17 @@ http://maven.apache.org/maven-v4_0_0.xsd">
      <maven.compiler.target>1.8</maven.compiler.target>
      <failOnMissingWebXml>false</failOnMissingWebXml>
   </properties>
+
+<repositories>
+     <repository>
+	 <id>snapshots-repo</id>
+	  <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+	   <releases>
+		<enabled>false</enabled>
+	   </releases>
+	   <snapshots>
+	    <enabled>true</enabled>
+	   </snapshots>
+      </repository>
+</repositories>
 </project>
