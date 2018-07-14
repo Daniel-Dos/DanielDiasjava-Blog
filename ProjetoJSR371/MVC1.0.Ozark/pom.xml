@@ -13,63 +13,47 @@ http://maven.apache.org/maven-v4_0_0.xsd">
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
-			<groupId>javax</groupId>
-			<artifactId>javaee-web-api</artifactId>
-			<version>7.0</version>
-			<scope>provided</scope>
-		</dependency>
+	<groupId>javax</groupId>
+	<artifactId>javaee-web-api</artifactId>
+	<version>8.0</version>
+	<scope>provided</scope>
+   </dependency>
 
-	<!-- Mongo Driver -->
-		<dependency>
-			<groupId>org.mongodb</groupId>
-			<artifactId>mongodb-driver</artifactId>
-			<version>3.4.1</version>
-		</dependency>
+   <!-- Mongo Driver -->
+  <dependency>
+	<groupId>org.mongodb</groupId>
+	<artifactId>mongodb-driver</artifactId>
+	<version>3.4.1</version>
+ </dependency>
 		
-		<dependency>
-            <groupId>org.glassfish.ozark</groupId>
-            <artifactId>ozark</artifactId>
-            <version>1.0.0-m02</version>
-            <scope>compile</scope>
-        </dependency>
+ <dependency>
+      <groupId>org.mvc-spec.ozark</groupId>
+      <artifactId>ozark-core</artifactId>
+      <version>1.0.0-m04-SNAPSHOT</version>
+  </dependency>
+	  
+  <dependency>
+     <groupId>org.mvc-spec.ozark</groupId>
+     <artifactId>ozark-jersey</artifactId>
+     <version>1.0.0-m04-SNAPSHOT</version>
+  </dependency>
         
-         <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>jstl</artifactId>
-            <version>1.2</version>
-        </dependency>
-        
-        <dependency>
-			<groupId>org.glassfish.jersey.core</groupId>
-			<artifactId>jersey-server</artifactId>
-			<version>2.22</version>
-		</dependency>
+  <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>jstl</artifactId>
+      <version>1.2</version>
+   </dependency>
+      
   </dependencies>
   <build>
     <finalName>MVC1.0.Ozark</finalName>
-    		<plugins>
-    		   <plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-war-plugin</artifactId>
-				<version>2.5</version>
-				<configuration>
-					<failOnMissingWebXml>false</failOnMissingWebXml>
-				</configuration>
-			</plugin>
-			<plugin>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.5.1</version>
-				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
-				</configuration>
-			</plugin>
-		</plugins>
   </build>
 
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<java.version>1.8</java.version>
-	</properties>
+  <properties>
+     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+     <maven.compiler.source>1.8</maven.compiler.source>
+     <maven.compiler.target>1.8</maven.compiler.target>
+     <failOnMissingWebXml>false</failOnMissingWebXml>
+  </properties>
 </project>
