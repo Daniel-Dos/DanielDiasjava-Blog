@@ -1,2 +1,2 @@
 # DanielDiasjava-Blog
-Projetos Apresentado no meu Blog - https://danieldiasjava.wordpress.com/
+Projetos Apresentado no meu Blog - https://medium.com/danieldiasjava
