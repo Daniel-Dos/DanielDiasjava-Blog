@@ -98,6 +98,7 @@ public class EventController {
             operationId = "getEventsAll",
             summary = "get all of the events",
             description = "This operation retrieves events from the database")
+    @GET
     public Response getEventsAll() {
         try {
             List<Event> event = eventRepository.findAll();
