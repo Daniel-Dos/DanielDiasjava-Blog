@@ -12,33 +12,22 @@ mkdir $HOME/terraform
 export TERRAFORM=$HOME/terraform
 export PATH=${TERRAFORM}/:${PATH}
 
-terraform --version
-
-java --version
-
-mvn --version
 # build maven 
-
-#mvn clean package
 
 mvn clean package 
 
-cp manifest.json target/
-
-cd target/
-
-zip -g vertx-sample.zip libs/*.jar vertx-sample.jar manifest.json 
-
-rm manifest.json
+cp manifest.json target/ && cd target/ && zip -g vertx-sample.zip libs/*.jar vertx-sample.jar manifest.json && rm manifest.json
 
 cd ..
 
-mv ./target/helidon-sample.zip ./
+mv ./target/vertx-sample.zip ./
+
+ls
 
 echo 'EXECUTANDO O TERRAFORM'
 
-terraform init -input=false
+#terraform init -input=false
 
-terraform apply -input=false -auto-approve
+#terraform apply -input=false -auto-approve
 
 $SHELL
