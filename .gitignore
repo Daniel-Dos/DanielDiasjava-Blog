@@ -23,7 +23,7 @@ target/
 .#*
 .git
 *#
-*.sh
+
 
 # os x stuff
 *Thumbs.db*

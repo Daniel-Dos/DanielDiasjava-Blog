@@ -12,7 +12,7 @@ mkdir $HOME/terraform
 export TERRAFORM=$HOME/terraform
 export PATH=${TERRAFORM}/:${PATH}
 
-# build maven 
+echo 'BUILD MAVEN' 
 
 mvn clean package 
 
