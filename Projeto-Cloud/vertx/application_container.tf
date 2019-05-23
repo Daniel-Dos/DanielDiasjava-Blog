@@ -4,7 +4,7 @@ provider "opc" {
   password          = "SEU PASSWORD DA CONTA ORACLE CLOUD"
   identity_domain   = "ID DO ORACLE IDENTiTY DOMAIN"
   storage_endpoint = "https://SEUIDENTITYDOMAIN.SUAREGION.storage.oraclecloud.com"
-  storage_service_id = "NOME IDENTITY DOMANIN USADO PARA ENTRA NA ORACLE CLOUD"
+  storage_service_id = "NOME IDENTITY DOMAIN USADO PARA ENTRA NA ORACLE CLOUD"
 }
 
 #Configure the Oracle Cloud Platform provider
