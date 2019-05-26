@@ -1,10 +1,6 @@
 package br.org.soujava.rio.vertx.main;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Optional;
-import java.util.Random;
-import java.util.stream.Collectors;
 
 import javax.enterprise.context.ApplicationScoped;
 
@@ -27,7 +23,7 @@ public class Main extends AbstractVerticle {
     
     public static Optional<String> portCloud = Optional.ofNullable(System.getenv("PORT"));
     
-    public static void main(String[] args ) throws Exception {
+    public static void main(String[] args ) {
 
        var cdiContainer = CdiContainerLoader.getCdiContainer();
        cdiContainer.boot();
