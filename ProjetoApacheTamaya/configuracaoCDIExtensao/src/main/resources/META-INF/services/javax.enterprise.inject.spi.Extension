@@ -1,0 +1,4 @@
+# Register Tamaya to perform injection
+#org.apache.tamaya.cdi.TamayaCDIInjectionExtension
+org.apache.tamaya.cdi.TamayaSEInjectionExtension
+org.apache.tamaya.cdi.TamayaCDIAccessor
