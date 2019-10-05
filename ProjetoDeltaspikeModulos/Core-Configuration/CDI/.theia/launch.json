@@ -1,0 +1,11 @@
+{
+   "configurations": [
+      {
+         "type": "java",
+         "name": "CodeLens (Launch) - CDIApplication",
+         "request": "launch",
+         "mainClass": "com.medium.danieldiasjava.app.CDIApplication",
+         "projectName": "core.configuration"
+      }
+   ]
+}
